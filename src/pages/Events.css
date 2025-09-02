@@ -1,0 +1,298 @@
+.events {
+  min-height: 100vh;
+  background: white;
+}
+
+.events-header {
+  background: linear-gradient(135deg, #F4D03F 0%, #FFE066 100%);
+  color: #2B3A67;
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.events-header h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.events-header .tagline {
+  font-size: 1.3rem;
+  font-style: italic;
+  color: #2B3A67;
+  font-weight: 500;
+}
+
+.social-events,
+.academic-events,
+.upcoming-events {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.social-events {
+  background: white;
+}
+
+.academic-events {
+  background: #f8f9fa;
+}
+
+.event-gallery {
+  background: #f8f9fa;
+  padding: 4rem 2rem;
+}
+
+.event-gallery h2 {
+  text-align: center;
+  color: #2B3A67;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  padding-bottom: 1rem;
+  border-bottom: 3px solid #E74C3C;
+  display: inline-block;
+  width: 100%;
+}
+
+.gallery-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.gallery-item {
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.gallery-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+}
+
+.upcoming-events {
+  background: white;
+}
+
+h2 {
+  text-align: center;
+  color: #2B3A67;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  padding-bottom: 1rem;
+  border-bottom: 3px solid #F4D03F;
+  display: inline-block;
+  width: 100%;
+}
+
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.event-card {
+  background: white;
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.event-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.event-card.social {
+  border: 3px solid #F4D03F;
+}
+
+.event-card.academic {
+  border: 3px solid #2B3A67;
+}
+
+.event-image {
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.event-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.event-card:hover .event-photo {
+  transform: scale(1.1);
+}
+
+.event-card h3 {
+  color: #2B3A67;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.event-card p {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.event-date {
+  background: #E74C3C;
+  color: white;
+  padding: 0.25rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  display: inline-block;
+}
+
+.event-waves {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  overflow: hidden;
+}
+
+.wave {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 20px;
+  background: #2B3A67;
+  opacity: 0.1;
+}
+
+.wave:nth-child(1) {
+  animation: wave 3s linear infinite;
+}
+
+.wave:nth-child(2) {
+  animation: wave 3s linear infinite;
+  animation-delay: 0.5s;
+  opacity: 0.15;
+}
+
+.wave:nth-child(3) {
+  animation: wave 3s linear infinite;
+  animation-delay: 1s;
+  opacity: 0.2;
+}
+
+.wave:nth-child(4) {
+  animation: wave 3s linear infinite;
+  animation-delay: 1.5s;
+  opacity: 0.25;
+}
+
+@keyframes wave {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+  50% {
+    transform: translateX(-25%) translateY(-10px);
+  }
+  100% {
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+.upcoming-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.upcoming-card {
+  background: white;
+  border-left: 5px solid #F4D03F;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  transition: all 0.3s;
+}
+
+.upcoming-card:hover {
+  transform: translateX(10px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.date-badge {
+  background: #2B3A67;
+  color: white;
+  border-radius: 10px;
+  padding: 1rem;
+  min-width: 80px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.date-day {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #F4D03F;
+}
+
+.date-month {
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.upcoming-details {
+  flex: 1;
+}
+
+.upcoming-details h3 {
+  color: #2B3A67;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.upcoming-details p {
+  color: #666;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.event-meta {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  color: #888;
+  font-size: 0.95rem;
+}
+
+.event-meta span {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
